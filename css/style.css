@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-1-main-box {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.5)100%), url(../images/banner.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.section-1-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+}
+
+header {
+    padding-bottom: 40px;
+    border-bottom: 1px solid silver;
+}
+
+header nav h1 {
+    float: left;
+}
+
+header nav ul {
+    float: right;
+}
+
+header nav ul li {
+    float: left;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    margin-right: 18px;
+    color: #fff;
+}
+
+header nav .custom {
+    float: right;
+    font-size: 25px;
+    padding-right: 12px;
+    display: none;
+}
+
+.content {
+    padding: 60px 0px;
+}
+
+.content h1 {
+    font-size: 37px;
+    margin-bottom: 30px;
+}
+
+.box {
+    float: left;
+    width: 33%;
+    padding: 4% 0%;
+}
+
+.box span {
+    color: rgb(14, 202, 139);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.box h3 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.box p {
+    font-size: 20px;
+    color: silver;
+}
+
+.border {
+    border-left: 1px solid white;
+    border-right: 1px solid whitesmoke;
+}
+
+button {
+    padding: 10px 25px;
+    border: 2px solid rgb(14, 202, 139);
+    color: rgb(14, 202, 139);
+    font-weight: 600;
+    border-radius: 25px;
+    background: none;
+}
+
+
+/* section-2 */
+
+.section-2-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 10px;
+}
+
+.section-2-box img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.section-2-box h1 {
+    font-weight: 200;
+    color: gray;
+}
+
+.section-2-box p {
+    line-height: 25px;
+    padding: 30px 0px;
+    color: silver;
+}
+
+.left-div {
+    width: 45%;
+    float: left;
+}
+
+.right-div {
+    float: right;
+    width: 45%;
+}
+
+
+/* section-3 */
+
+.section-3-main-box {
+    background-color: rgb(14, 202, 139);
+    padding: 70px 10px;
+}
+
+.section-3-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    /* text-align: center; */
+}
+
+.section-3-box h1 {
+    margin-bottom: 50px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.left {
+    float: left;
+    width: 49%;
+}
+
+.left input {
+    width: 98%;
+    border: 2px solid silver;
+    height: 30px;
+    padding-left: 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 8px;
+}
+
+.right {
+    float: right;
+    width: 49%;
+}
+
+.right input {
+    border: 2px solid silver;
+    height: 30px;
+    width: 98%;
+    padding-left: 10px;
+    margin: 10px 0px;
+    border-radius: 8px;
+}
+
+textarea {
+    margin: 10px 0px;
+    width: 99%;
+    padding-left: 10px;
+    padding-top: 6px;
+    height: 200px;
+    border: 2px solid silver;
+    border-radius: 8px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 25px;
+    background: none;
+    margin: 10px 0px 20px 0px;
+}
+
+.btt {
+    max-width: 1200px;
+    text-align: center;
+}
+
+
+/* media Query */
+
+@media only screen and (max-width:720px) {
+    header nav ul {
+        position: absolute;
+        top: 102px;
+        background-color: black;
+        /* width: 93px; */
+        width: 100%;
+        opacity: 0.9;
+        color: #fff;
+        text-align: center;
+        display: none;
+        height: 100vh;
+        padding-top: 25%;
+    }
+    header nav ul li {
+        float: none;
+        padding: 10px 10px;
+    }
+    header nav ul li a {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    header nav ul li a :hover {
+        font-size: 30px;
+        margin-top: 50px;
+        text-decoration: underline;
+    }
+    header nav .custom {
+        display: block;
+    }
+    .box {
+        width: 48%;
+    }
+    .margin {
+        margin-left: 24%;
+    }
+    .border {
+        border-left: 1px solid white;
+        border-right: none;
+    }
+    .left-div {
+        width: 100%;
+        float: none;
+    }
+    .right-div {
+        width: 100%;
+        float: none;
+    }
+    .section-2-box img {
+        margin-top: 30px;
+    }
+    textarea {
+        width: 98%;
+    }
+    .right input {
+        width: 97%;
+    }
+    .left input {
+        width: 97%;
+    }
+}
+
+@media only screen and (max-width:475px) {
+    .content h1 {
+        font-size: 32px;
+    }
+    .box {
+        width: 100%;
+    }
+    .margin {
+        margin-left: 0;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+}
